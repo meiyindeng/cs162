@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -19,8 +20,10 @@ int main()
         if (strlen(word1) != strlen(word2))
         {
             cout << "The words are NOT anagrams of each other"<< endl;
-            return 0;
+
         }
+        else
+        {
 
 
 
@@ -58,7 +61,7 @@ int main()
 
              cout << "The words are anagrams of each other"<< endl;
             }
-
+        }
 
             bool correctInput = false;
             string continuePromp;
