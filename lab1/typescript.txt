@@ -1,0 +1,78 @@
+Script started on Thu Sep 27 18:56:27 2018
+[?1034hbash-3.2$ g++ lab1.cpp -o prog
+clang: [0;1;31merror: [0mno such file or directory: 'lab1.cpp'[0m
+clang: [0;1;31merror: [0mno input files[0m
+bash-3.2$ pwe[Kd
+/Users/meiyindeng
+bash-3.2$ U[Kpwdg++ lab1.cpp -o prog[C[C[C[C[C[C[C[C[C[C/Users/meiyindeng/Documents/cs162/lab1/lab1[K[K[K[K[K/
+bash: /Users/meiyindeng/Documents/cs162/lab1/: is a directory
+bash-3.2$ g++ lab1.cpp[K[K[K[K[K[K[K[K[K[K[K[Kcd /Users/meiyindeng/Documents/cs162/lab1/[C[C[C[C[C[C[C[C[C[Cc/Users/meiyindeng/Documents/cs162/lab1/[C[C[C[C[C[C[C[C[C[C[Cd/Users/meiyindeng/Documents/cs162/lab1/[C[C[C[C[C[C[C[C[C[C[C[C /Users/meiyindeng/Documents/cs162/lab1/[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-3.2$ g++ lab1.cpp -o prog
+bash-3.2$ ./prg[Kog
+Enter the initial principal amount (between 1 and 100000) 
+10000
+Enter rate of return as a percentage (between 1 and 100): 
+10
+Enter number of years (between 1 and 20): 
+10
+YEAR              Amount
+  1            11051.56
+  2            12213.69
+  3            13498.03
+  4            14917.43
+  5            16486.08
+  6            18219.69
+  7            20135.60
+  8            22252.97
+  9            24593.00
+ 10            27179.10
+bash-3.2$ ./prog
+Enter the initial principal amount (between 1 and 100000) 
+-2345
+Invalid amount. Please re-enter 
+Enter the initial principal amount (between 1 and 100000) 
+1000000000
+Invalid amount. Please re-enter 
+Enter the initial principal amount (between 1 and 100000) 
+100000
+Enter rate of return as a percentage (between 1 and 100): 
+-3
+Invalid amount. Please re-enter 
+Enter rate of return as a percentage (between 1 and 100): 
+101
+Invalid amount. Please re-enter 
+Enter rate of return as a percentage (between 1 and 100): 
+100
+Enter number of years (between 1 and 20): 
+-3
+Invalid amount. Please re-enter 
+Enter number of years (between 1 and 20): 
+21
+Invalid amount. Please re-enter 
+Enter number of years (between 1 and 20): 
+20
+YEAR              Amount
+  1           271456.75
+  2           736887.66
+  3          2000331.28
+  4          5430034.26
+  5         14740194.42
+  6         40013252.44
+  7        108618673.93
+  8        294852720.20
+  9        800397606.25
+ 10       2172733314.61
+ 11       5898031202.94
+ 12      16010603711.45
+ 13      43461864202.65
+ 14     117980163272.56
+ 15     320265114743.33
+ 16     869381266108.28
+ 17    2359994114456.62
+ 18    6406363280867.18
+ 19   17390505440261.66
+ 20   47207700564060.51
+bash-3.2$ exit
+exit
+
+Script done on Thu Sep 27 19:00:51 2018
