@@ -11,47 +11,58 @@ ofstream outFile;
 int linenum = 1;
 struct EmployeeType
 {
-    string name;
+    char name[20];
     int ID;
     double hours;
     double payRate;
-    double grossPay;
+
 };
 
-EmployeeType employeeInfo;
-employeeInfo.grossPay = 0.0;
-
-
+EmployeeType employeeInfo[100];
 
 inFile.open("employees.txt");
+    if(!inFile)
+    {
+        cout << "could not open file" << endl;
+    }
 
+int count = 0;
+char c = inFile.peek();
+while(!inFile.eof() && count <= 100 && c != '\n')
+{
+    inFile.getline(employeeInfo[count].name, 21);
+    inFile >> employeeInfo[count].ID;
+    inFile.ignore(21, '\n');
+    inFile >> employeeInfo[count].hours;
+    inFile.ignore(21, '\n');
+    inFile >> employeeInfo[count].payRate;
+    inFile.ignore(21, '\n');
+    count++;
+    c = inFile.peek();
+}
 
-    inFile >> employeeInfo.name;
-
-
-    inFile >> employeeInfo.ID;
-    inFile >> employeeInfo.hours;
-    inFile >> employeeInfo.payRate;
+inFile.close();
 
 
 
 outFile.open("employeeInfo.out");
+for (int i = 0; i <= 100; i++)
+{
+    outFile << "name: " << employeeInfo[i].name<< endl;
+    outFile << "ID: " << employeeInfo[i].ID << endl;
+    outFile << "hours: " << employeeInfo[i].hours << endl;
+    outFile << "payrate: " << employeeInfo[i].payRate << endl;
 
-    outFile << "name: " << setw(20) << employeeInfo.name << endl;
-    outFile << "ID: " << setw(6) << employeeInfo.ID << endl;
-    outFile << "hours: " << setw(6) << employeeInfo.hours << endl;
-    outFile << "payrate: " << setw(6) << employeeInfo.payRate << endl;
-
-
-
-
-
+}
 
 
 
 
 
-inFile.close();
+
+
+
+
 outFile.close();
 
 return 0;
