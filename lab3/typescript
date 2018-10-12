@@ -1,0 +1,60 @@
+Script started on Thu Oct 11 22:48:08 2018
+[?1034hbash-3.2$ g[Kpwd
+/Users/meiyindeng/Documents/cs162/lab3
+bash-3.2$ g++ lab3.cpp -o lab3
+bash-3.2$ ./lab3
+bash-3.2$ cat employeeInfo.out
+name: Linda Noonan
+ID: 12343
+hours: 30.50
+payrate: 12.10
+name: Tony Franklin
+ID: 42454
+hours: 40.00
+payrate: 35.20
+name: Mary White
+ID: 34255
+hours: 15.00
+payrate: 10.90
+name: Randall Gunder
+ID: 43243
+hours: 36.75
+payrate: 26.31
+name: Mark Brown
+ID: 35433
+hours: 39.00
+payrate: 19.00
+name: Brenda McMillan
+ID: 24364
+hours: 8.50
+payrate: 20.00
+name: Frank Lacey
+ID: 84325
+hours: 11.25
+payrate: 12.30
+name: John Green
+ID: 47283
+hours: 40.00
+payrate: 28.33
+Calculating gross pay ...
+Linda Noonangross pay is 369.05
+Tony Franklingross pay is 1408.00
+Mary Whitegross pay is 163.50
+Randall Gundergross pay is 966.89
+Mark Browngross pay is 741.00
+Brenda McMillangross pay is 170.00
+Frank Laceygross pay is 138.38
+John Greengross pay is 1133.20
+bash-3.2$ cat grosspay.txt
+12343 369.05
+42454 1408.00
+34255 163.50
+43243 966.89
+35433 741.00
+24364 170.00
+84325 138.38
+47283 1133.20
+bash-3.2$ exit
+exit
+
+Script done on Thu Oct 11 22:49:37 2018

@@ -105,3 +105,11 @@ int main()
 
     return 0;
 }
+
+while(!inFile.eof())
+    {
+        getline(inFile, line);
+
+
+
+    }

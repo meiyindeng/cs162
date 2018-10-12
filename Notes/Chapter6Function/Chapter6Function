@@ -1,0 +1,118 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+/*Advantage of function:
+    1. Reduces the complexity of function main
+    2. You can use it in the program again and again without having to rewrite the same code
+*/
+
+/*I. Predefined Functions
+    - a rule or correspondence between values, function's arguments, and the unique values of the function associated
+    - f(x) = 2x + 5; value of x is the arguments of the function f, the result is the corresponding values of f.
+    - pow(x, y) pow(2.0, 3) = 2.0^3 = 8.0 x and y are the parameters
+    (399)Table 6-1 list commonly predefined functions
+
+    include the header file that contains the functions's specification
+    toupper('a') return an integer value, so need to use static_cast<char> to convert to letter
+*/
+
+/* Value-returning function - functions that have a return type. Return a value of a specific data type using the return statement.
+    Void function - Do not have a return type. Do not use a return statement to return a value.
+
+    II. Value-Returning Fuctions
+        Ex: pow, abs, islower, toupper - need to know the name of the header file
+        5 items need to know Function Heading
+            functiontype function name (formal parameter list)
+            Ex: int abs (int number)
+            {
+            return number;
+            }
+            first four is the function header, the fifth is the body of the function
+            the five properties called the definition of the function
+           1. The name of the function (abs)
+           2. The formal parameters (number)
+           3. The data type of each parameter (int)
+                functionType also call the return type of the value-returning function
+           4. The data type of the value computed (int)Ex. toupper returns a int instead of char
+           5. The code required to accomplish the task (body)
+            Is Used in
+            * in an assignment statement
+            * as a parameter in a function call
+            * in an output statement
+
+            double pow (double base, double exponent) - variable declared in the function heading
+            x = pow (double u, double v) - variable listed in a call to a function
+            u and v is copied into the base and exponent, passed to the function pow - actual parameters
+
+        Function Call - always need to include parentheses()
+            actual parameters need to match formal parameters one-to-one correspondence
+            functionName (actual parameter) - expression "5" or variable number
+                Specified the actual parameter not its data type
+            num = larger (num1, num2)
+        Return Statement
+            return expr (expr can be variable, constant value, or expression) computes must match the function type
+            Of a value returning function must return a value, if execute statement is false,  function is invalid
+            Can only return value of the last expression
+
+        Local declaration in a function
+            addition variable used inside the body of a function
+
+        The execution of a return statement in a function terminates the function
+        Once you have a written funtion, you can use it to write ohter functions:
+            return larger(x, largery, z));
+        Function Prototype on top of the Main function, so Main knows it need to use the function written after
+
+    III. Flow of Compilation and Execution
+        Must declare an identifier before you can use it.
+        All functions' definitions appear before the function main are compiled before the funciton main in the order they are placed.
+        The first statement in the function main always executes first regardless of where in the program the function main is placed.
+        Other functions execute only when they are called.
+
+    IV. Void function
+        void functionName (dataType & variableName) - formal parameter list may be empty
+        {
+            statements
+        }
+        A. Parameter Types
+            - a communication link between the calling function (such as main) and the called function.
+            - enable functions to manipulate different data each time they are called
+
+            Content vs Location
+            Value parameter: a formal parameter that receives a copy of the content of the corresponding actual parameter.
+            Reference parameter: A formal parameter that receives the location (memory address) of the corresponding actual parameter.
+                attach '&' after the dataType, variable becomes a reference parameter
+        After copying data, a value parameter has no connection with the actual parameter, so a value parameter cannot pass any result back to the calling function.
+        Any changes made to the formal parameters do not in any way affect the actual parameters.
+        Value parameters cannot pass information outside of the function.
+    V. Reference Variables as Parameters
+        Reference parameters can pass one or more values from a function and can change the value of the actual parameter.
+        When calling the function, the content of the formal parameter is an address, directs the computer to manipulate the data at that address,
+        The actual and formal parameters refer to the same memory location.
+        1. calls the function getScore to obtain the course score from user getScore(int& score)
+        2. calls the function printGrade to calculate letter grade,
+        3. which retrieve from function getScore. passes the value outside.
+    VI. Static and Automatic Variables
+        Automatic - A variable for which memory is allocated at block entry and deallocated at block exit (Declare within a block)
+        Static - A variable for which memory remains allocated as long as the program executes (Global Variables)
+            Allow you to use the value of a variable from one function call to another function
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+return 0;
+}

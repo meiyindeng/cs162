@@ -1,0 +1,32 @@
+Linda Noonan
+12343
+30.5
+12.10
+Tony Franklin
+42454
+40.0
+35.20
+Mary White
+34255
+15.0
+10.90
+Randall Gunder
+43243
+36.75
+26.31
+Mark Brown
+35433
+39.0
+19.00
+Brenda McMillan
+24364
+8.5
+20.00
+Frank Lacey
+84325
+11.25
+12.30
+John Green
+47283
+40.0
+28.33

@@ -1,0 +1,27 @@
+include <iostream>
+using namespace std;
+void printStars (int blanks, int starsInline);
+
+main(){
+int numberOfLines = 15;
+int numberOfBlanks = 30;
+for (counter = 1; counter <= numberOfLines; counter++)
+{
+    printStars(numberOfBlanks, counter);
+    numberOfBlanks--;
+
+return 0;
+}
+
+
+
+void printStars (int blanks, int starsInline)
+{
+    int count;
+    for (count = 1; count <= blanks; count ++)
+        cout << ' ';
+
+    for (count = 1; count <= starsInLine; count ++)
+        cout << " *";
+    cout << endl;
+}

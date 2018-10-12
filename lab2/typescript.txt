@@ -1,0 +1,41 @@
+Script started on Thu Oct  4 23:08:35 2018
+[?1034hbash-3.2$ cd Doc[K[K[K[K[K[Kpwd
+/Users/meiyindeng/Documents/cs162/lab2/lab2-2
+bash-3.2$ cd ../
+bash-3.2$ ls
+lab2		lab2-2		lab2.cpp
+bash-3.2$ g++ c[Klab2.cpp -o lab2 && ./lab2
+Enter the first word:
+jump
+Enter the second word:
+pump
+The words are NOT anagrams of each other
+Do you want to continue? (y or n)y
+Enter the first word:
+tip
+Enter the second word:
+pit
+The words are anagrams of each other
+Do you want to continue? (y or n)y
+Enter the first word:
+hated
+Enter the second word:
+death
+The words are anagrams of each other
+Do you want to continue? (y or n)y
+Enter the first word:
+hotter
+Enter the second word:
+tinker
+The words are NOT anagrams of each other
+Do you want to continue? (y or n)y
+Enter the first word:
+alloy
+Enter the second word:
+loyal
+The words are anagrams of each other
+Do you want to continue? (y or n)n
+bash-3.2$ exit
+exit
+
+Script done on Thu Oct  4 23:11:24 2018

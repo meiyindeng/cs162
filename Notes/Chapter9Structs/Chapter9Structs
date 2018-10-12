@@ -1,0 +1,20 @@
+I. Struct group items that are related but of different types
+    - A collection of a fixed number of components in which the components are accessed by name
+    - Members of the struct (name of components)
+    Single variable can pass all the components as parameters to a function
+    struct structName
+    {
+    dataType1 identifier1;
+    dataType2 identifier2;
+    };
+
+    Struct is a definition, not a declaration - only a data type; no memory is allocated.
+    Define datatype: Exp: houseType newHouse;
+
+II. Accessing struct Members
+    Using the array name together with the relative position (index) of the component.
+
+
+
+
+
