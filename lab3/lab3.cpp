@@ -6,13 +6,14 @@
 using namespace std;
 
 struct EmployeeType {
-    char name [20];
+    char name[20];
     int ID;
     double hours;
     double payRate;
     double grossPay;
 
 };
+
 
 int main() {
     ifstream inFile;
@@ -30,7 +31,11 @@ int main() {
 
     int count = 0;
     char c = inFile.peek();
-    while (!inFile.eof() && count <= 100 && c != '\n') {
+
+    while (c != '\n') {
+        if( inFile.eof() ) {
+            break;
+        }
         inFile.getline(employeeInfo[count].name, 20);
         inFile >> employeeInfo[count].ID;
         inFile.ignore(20, '\n');
@@ -38,33 +43,34 @@ int main() {
         inFile.ignore(20, '\n');
         inFile >> employeeInfo[count].payRate;
         inFile.ignore(20, '\n');
-        count ++;
+        count++;
+
         c = inFile.peek();
     }
 
 
-
     outFile.open("employeeInfo.out");
-    for (int i = 0; i <= 8; i++) {
-        
+    for (int i = 0; i < count; i++) {
+
         outFile << "name: " << employeeInfo[i].name << endl;
         outFile << "ID: " << employeeInfo[i].ID << endl;
         outFile << "hours: " << employeeInfo[i].hours << endl;
         outFile << "payrate: " << employeeInfo[i].payRate << endl;
 
+
     }
 
     outFile << "Calculating gross pay ..." << endl;
-    for (int i = 0; i <= 9; i++) {
+    for (int i = 0; i < count; i++) {
         employeeInfo[i].grossPay = employeeInfo[i].hours * employeeInfo[i].payRate;
-        outFile << employeeInfo[i].name << "gross pay is " << employeeInfo[i].grossPay << endl;
+        outFile << employeeInfo[i].name << " gross pay is " << employeeInfo[i].grossPay << endl;
     }
 
 
     outFile.close();
 
     outFile.open("grosspay.txt");
-    for (int i = 0; i <=9; i++) {
+    for (int i = 0; i < count; i++) {
         employeeInfo[i].grossPay = employeeInfo[i].hours * employeeInfo[i].payRate;
         outFile << employeeInfo[i].ID << " " << employeeInfo[i].grossPay << endl;
 
@@ -73,6 +79,7 @@ int main() {
     outFile.close();
 
 
-        inFile.close();
+    inFile.close();
     return 0;
+
 }
