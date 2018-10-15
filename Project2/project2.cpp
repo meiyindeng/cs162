@@ -24,7 +24,7 @@ void printTask(taskType Task[], int i);
 int main(){
     taskType Task[200];
     int count = 0;
-    int menuChoice=1;
+    int menuChoice;
 
     cout << "*********MAIN MENU**********" << endl;
     cout << "1 - PRINT ALL Tasks" << endl;
@@ -41,7 +41,7 @@ int main(){
             if (menuChoice>=1 && menuChoice<=4){
                 correctInput=true;
             }
-            //else cout << "Invalid Input";
+            else cout << "Invalid Input";
 
             }
 
@@ -57,13 +57,14 @@ int main(){
     if(menuChoice==3){
         //cout << "Start Count is: " << count;
         cout << "Enter Name:" << endl;
-
+            cin.clear();
+            cin.ignore();
             cin.get(Task[count].taskName, sizeof(Task[count].taskName));
+            cin.ignore();
+        cout << "Enter description (all on one line):" << endl;
+            cin.getline(Task[count].description, sizeof(Task[count].description));
 
-        //cout << "Enter description (all on one line):" << endl;
-            //cin.getline(Task[3].description, 101);
-
-        /*cout << "Entering Due Date:" << endl;
+        cout << "Entering Due Date:" << endl;
         cout << "Enter Month (1 to 12):" << endl;
             cin >> Task[count].month;
         cout << "Enter Day (1 to 31):" << endl;
@@ -72,7 +73,8 @@ int main(){
             cin >> Task[count].year;
             Task[count].complete=0;
             count++;
-        writeTask1(count, Task);*/
+
+        //writeTask1(count, Task);*/
 
 
 
