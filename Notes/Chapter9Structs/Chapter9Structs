@@ -13,6 +13,8 @@ I. Struct group items that are related but of different types
 
 II. Accessing struct Members
     Using the array name together with the relative position (index) of the component.
+    structVariableName.memberName
+    the dot (.) is called the member access operator.
 
 
 
