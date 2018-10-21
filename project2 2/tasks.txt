@@ -16,9 +16,15 @@ Needs to be done before final.
 1
 2018
 0
-Hello
-My Name is Megan
-1
-30
+Get Groceries
+eggs, milk, bread
+7
+15
 2018
+0
+Do Taxes
+for 2018
+4
+15
+2019
 0

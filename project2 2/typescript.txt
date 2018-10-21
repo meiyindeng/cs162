@@ -1,0 +1,124 @@
+Script started on Wed Oct 17 22:08:41 2018
+[?1034hbash-3.2$ exitg++ project2.cpp -o project2 && ./project2
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3 - Add Task
+4 - Quit
+Enter choice:1
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: NOT COMPLETE
+Task Name: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+Enter choice:2
+Input Begin Date: 
+Enter Month (1 to 12): 
+-3
+Invalid Input
+89
+Invalid Input
+7
+Enter Day (1 to 31): 
+-3
+Invalid Input
+89
+Invalid Input
+1
+Enter Year (2017 to 2067)
+1999
+Invalid Input
+2100
+Invalid Input
+2018
+Input End Date: 
+Enter Month (1 to 12): 
+1
+Enter Day (1 to 31): 
+15
+Enter Year (2017 to 2067)
+2019
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: NOT COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+Enter choice:3
+Enter Name:
+Get Groceries
+Enter Description (all on one line):
+eggs, milk, bread
+Entering Due Date:
+Enter Month (1 to 12):
+7
+Enter Day (1 to 31):
+15
+Enter Year (2017 to 2067):
+2018
+Enter choice:1
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: NOT COMPLETE
+Task Name: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+Task Name: Get Groceries
+Task Description: eggs, milk, bread
+Month: 7/15/2018
+Task is: NOT COMPLETE
+Enter choice:9
+Invalid Input
+3
+Enter Name:
+Do t Taxes
+Enter Description (all on one line):
+for 2018
+Entering Due Date:
+Enter Month (1 to 12):
+4
+Enter Day (1 to 31):
+15
+Enter Year (2017 to 2067):
+2019
+Enter choice:1
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: NOT COMPLETE
+Task Name: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+Task Name: Get Groceries
+Task Description: eggs, milk, bread
+Month: 7/15/2018
+Task is: NOT COMPLETE
+Task Name: Do Taxes
+Task Description: for 2018
+Month: 4/15/2019
+Task is: NOT COMPLETE
+Enter choice:4
+bash-3.2$ exit
+exit
+
+Script done on Wed Oct 17 22:11:34 2018
