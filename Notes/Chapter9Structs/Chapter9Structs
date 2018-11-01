@@ -1,7 +1,8 @@
 I. Struct group items that are related but of different types
-    - A collection of a fixed number of components in which the components are accessed by name
+	Array is homogenous vs struct is heterogeneous.
+    - A collection of a fixed number of components in which the components are accessed by structName
     - Members of the struct (name of components)
-    Single variable can pass all the components as parameters to a function
+    Pros: Single variable can pass all the components as parameters to a function
     struct structName
     {
     dataType1 identifier1;
@@ -15,6 +16,57 @@ II. Accessing struct Members
     Using the array name together with the relative position (index) of the component.
     structVariableName.memberName
     the dot (.) is called the member access operator.
+
+III. Assignment
+    Assign value of one struct variable to another struct variable
+	Ex: struct studentType{
+		string firstName;
+		string lastName;
+		char courseGrade;
+		int testScore;
+		int programmingScore;
+		double GPA;
+		};
+		//variable
+		studentType newStudent;
+		studentType student;
+	when student = newstudent, copies the contents of newStudent into student.
+IV Comparison
+	can only compare them member-wise, 
+	Ex: if(student.firstname == newStudent.firstName)
+
+V Input/Output
+	No aggregate I/O operations allowed. Must read one member at a time. Contents of a struct variable 	must be written one member at a time.
+	Ex: cout << newStudent.firstName << " " << newStudent.lastName << " " << newStudent.courseGrade
+	
+VI struct Variables and Functions
+	Array passed by reference only, and a function cannot return a value of type array.
+	Struct variable can be passed as a parameter by value or by reference.
+	Function can return value of type struct
+
+Chapter 1: Review 72
+
+Chapter 2 Basic elements of C++: Review 151
+
+Chapter 3: Input/Out Review 223
+
+Chapter 4: Control Structures (If, Switch)293
+
+Chapter 5: More control structure (eof, get, ignore, and peek, for loop) 374
+
+Chapter 6: User-Define function 485
+
+Chapter 7: list of string function, 546 Review 560
+
+Chpater 8: Array, C-String 604 Review, 640
+
+Chapter 9: Structs Review 692
+
+Chapter 10: Class Review 722
+
+
+	
+
 
 
 

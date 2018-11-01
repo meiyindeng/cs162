@@ -1,0 +1,39 @@
+for (dataType identifier : arrayName)
+	statements
+- identifer is a variable and dataType is the same as the data type of the arrayelements.
+double list[25];
+double sum;
+sum = 0;
+Ex: for (double num : list) 
+	sum = sum + num;
+	for each num in list, num initialized to list [0]
+Range-based loop - function cannot be applied to an array.
+for (auto num:list){
+	if (max < num)
+	max = num;
+} 
+
+Base Address of an Array
+	memory location of the first array component Ex: list [0]
+	When passing an array as parameter, teh base address of the actual array is passed to the formal parameter. Computer calculate the address given the base address, the data type byte size, and index
+
+enumination type for the array:
+enum painType {Green, Red, Blue, Yellow};
+double paintSale[7];
+paintType paint;
+	for (paint = Green; paint <=Yellow; paint = static_cast<paintType>(paint+1)) 
+	paintSale[paint] = 0.0;
+
+Sequential search or linear search
+Sorting - slection sort, moving elements in the list to its proper position. 
+ 1. find the smallest element
+ 2. swapping element with list [0]
+    temp = list [smallestIndex}; list[smalletIndex] = list[index]; list[index]=temp;
+
+Formal parameter of an array is not an array but a variable to store the address of a memory location, it has not first list[0] and last elements
+
+string Type and Input/Output Files;
+	open function must be a null-terminated string or c-string
+	c_str converts string to c-string Ex: 
+	infile.open(stringFileName.c_str());
+
