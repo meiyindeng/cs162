@@ -18,7 +18,7 @@ Song::Song() {
 
 }
 
-int Song::getYear() {
+const int * Song::getYear(){
     return year;
 }
 
@@ -30,7 +30,9 @@ void Song::setYear(int y) {
 
 }
 
-double Song::getDuration() {
+
+
+const double * Song::getDuration(){
     return duration;
 }
 
@@ -42,14 +44,12 @@ void Song::setDuration(double d) {
 }
 
 
-    const char * Song::getTitle() {
-
+const char * Song::getTitle() {
     return title;
 }
 
-void Song::getArtist(char *artist) {
-
-    strcpy(artist, Song::artist);
+const char * Song::getArtist(){
+    return artist;
 }
 
 void Song::setTitle(char t[]) {
@@ -60,8 +60,12 @@ void Song::setTitle(char t[]) {
     strcpy(title, t);
 }
 
-void Song::setArtist(char artist[]) {
-    strcpy(Song::artist, artist);
+void Song::setArtist(char a[]) {
+    if(artist != nullptr){
+        delete artist;
+    }
+    artist = new char[strlen(a)+1];
+    strcpy(artist, a);
 }
 
 void Song::print() {

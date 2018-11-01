@@ -58,11 +58,11 @@ int main()
 	  cout << "title? ";
 	  cin.getline(title, MAX_STR);
 	  //array[i].setTitle(title);
-	  //list[i].setTitle(char title);
+	  list[i].setTitle(char title[]);
 
 	  cout << "artist? ";
 	  cin.getline(artist, MAX_STR);
-	  //array[i].setArtist(artist);
+	  array[i].setArtist(artist[]);
 	  //list[i].setArtist(char artist);
 	  cout << "year? ";
 	  cin >> year;
@@ -78,17 +78,21 @@ int main()
 
   cout << endl << endl;
   
-  /*for(int i=0; i<2; i++)
+  for(int i=0; i<2; i++)
   {
       cout << endl;
 	  // Using getters to get information to print.
 	  cout << "getting song " << i << " information with getters" << endl;
 	  //array[i].getTitle(title);
+	  list[i].getTitle();
 	  cout << "title: " << title << endl;
 	  //array[i].getArtist(artist);
+	  list[i].getArtist();
 	  cout << "artist: " << artist << endl;
-	  cout << "year: " << array[i].getYear() << endl;
-	  cout << "duration: " << array[i].getDuration() << endl;
+	  cout << "year: " << list[i].getYear() << endl;
+	  //array[i].getYear() << endl;
+	  cout << "duration: " << list[i].getDuration() << endl;
+	  //array[i].getDuration() << endl;
 	  cout << endl;
 	  //Using a print function which is a member of the class Song
 	  //This is a better solution but wanted to have students practice
@@ -97,7 +101,7 @@ int main()
 	  //array[i].print();
 	  list[i].print();
 
-  }*/
+  }
   
   return 0;
 }

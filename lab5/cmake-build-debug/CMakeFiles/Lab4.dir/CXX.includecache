@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/meiyindeng/Documents/cs162/lab5/song.cpp
+iostream
+-
+string
+-
+stdio.h
+-
+stdlib.h
+-
+song.h
+/Users/meiyindeng/Documents/cs162/lab5/song.h
+
+/Users/meiyindeng/Documents/cs162/lab5/song.h
+
+/Users/meiyindeng/Documents/cs162/lab5/songmain.cpp
+cstdlib
+-
+iostream
+-
+cstring
+-
+song.h
+/Users/meiyindeng/Documents/cs162/lab5/song.h
+

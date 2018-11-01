@@ -10,17 +10,17 @@ private:
 public:
     Song();
 
-    int getYear();
+    const int * getYear();
 
     void setYear(int year);
 
-    double getDuration();
+    const double * getDuration();
 
     void setDuration(double duration);
 
-    void getTitle(char *title);
+    const char * getTitle();
 
-    void getArtist(char *artist);
+    const char * getArtist();
 
     void setTitle(char title[]);
 
