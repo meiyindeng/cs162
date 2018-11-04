@@ -9,8 +9,11 @@ public:
    void Print() const;		// prints the list
    int GetSize() const;		// returns number of elements in list
 
+
 private:
    double array[MAX];
+   double *ptr;
    int current;		// number of stored items (max is 10)
+
 
 };

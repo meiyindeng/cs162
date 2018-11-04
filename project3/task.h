@@ -1,20 +1,26 @@
+
+#define MAX_STR 30
+#define MAX_STR2 100
+
 class Task{
     private:
-	char taskName[30];
-	char description[100];
-	int month;
-	int day;
-	int year;
-	bool complete;
+		char taskName [MAX_STR];
+		/*char description [MAX_STR2];
+		int month;
+		int day;
+		int year;
+		bool complete;*/
     public:
-	char getTaskName[30];
-	char getDescription[100];
-	void getDate(int&, int&, int&) const;
-	bool getComplete;
-	void setTaskName(char taskName[]);
-	void setDescription(char description[]);
-	void setDate(int, int, int);
-	void setComplete(bool);
-	Task();
+		Task();
+
+		void setTaskName(char taskName[]);
+        void getTaskName(char *tn);
+    /*void setDescription(char description[]);
+		void setMonth(int m);
+		void setDay(int d);
+		void setYear(int y);
+		void setComplete(bool);*/
+        void print();
+    ~Task();
 };
 

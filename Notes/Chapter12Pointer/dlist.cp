@@ -30,16 +30,17 @@ double DList::GetElement(unsigned int n) const
 void DList::Print() const
 {
    if (current == 0)
-   {	cout << "Empty List";
+   {	cout << "Empty List" << endl;
 	return;
    }
    int i;
-   for (i = 0; i < current-1; i++)
-	cout << array[i] << ", ";
-   cout << array[i];
+   for (i = 0; i < current; i++)
+	cout << array[i] << endl;
 }
 
 int DList::GetSize() const
 {
    return current;
 }
+
+

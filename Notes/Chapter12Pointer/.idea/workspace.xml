@@ -10,19 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d2eca91-5675-4e52-b59e-07778dcc07ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Chapter12Pointer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab4 2/songmain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/practiceSample.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/practiceSample.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter9Structs/Chapter9Structs" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter9Structs/Chapter9Structs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project2/project2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project2/project2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project2/project2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project2/project2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab4/lab4.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes12/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes12/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes12/.idea/notes12.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes12/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes12/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes12/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlist.cp" beforeDir="false" afterPath="$PROJECT_DIR$/dlist.cp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/dlist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/song.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/song.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/prog" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/prog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/song.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/songmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/songmain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project1" beforeDir="false" afterPath="$PROJECT_DIR$/../../project1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project1 2" beforeDir="false" afterPath="$PROJECT_DIR$/../../project1 2" afterDir="false" />
     </list>
@@ -36,29 +43,77 @@
     <session id="194089500">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cp" value="2" />
-          <entry key="h" value="1" />
+          <entry key="cp" value="4" />
+          <entry key="h" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="3" />
+          <entry key="ObjectiveC" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cp" value="229" />
+          <entry key="h" value="48" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="ObjectiveC" value="277" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dlist.cp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dlist.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dlist.cp" />
+        <option value="$PROJECT_DIR$/dlist.h" />
+        <option value="$PROJECT_DIR$/main.cp" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -67,10 +122,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="462" />
-    <option name="y" value="26" />
-    <option name="width" value="1680" />
-    <option name="height" value="947" />
+    <option name="x" value="610" />
+    <option name="y" value="23" />
+    <option name="width" value="1044" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -121,22 +176,20 @@
       <option name="presentableId" value="Default" />
       <updated>1541046879110</updated>
       <workItem from="1541046880773" duration="854000" />
+      <workItem from="1541134814380" duration="4457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="854000" />
+    <option name="totallyTimeSpent" value="5311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="462" y="26" width="1680" height="947" extended-state="0" />
+    <frame x="610" y="23" width="1044" height="953" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41317365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -144,10 +197,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,20 +214,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.cp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dlist.h">
+    <entry file="file://$PROJECT_DIR$/dlist.cp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dlist.cp">
+    <entry file="file://$PROJECT_DIR$/dlist.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>

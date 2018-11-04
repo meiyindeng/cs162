@@ -2,6 +2,7 @@
 #include <string>
 #include <stdio.h>
 #include <stdlib.h>
+#include <iomanip>
 
 #include "song.h"
 
@@ -26,21 +27,24 @@ void Song::setYear(int y) {
     if(year != nullptr){
         delete year;
     }
-    year = &y;
+
+    year = new int;
+    *year = y;
 
 }
 
 
 
 const double * Song::getDuration(){
-    return duration;
+    return  duration;
 }
 
 void Song::setDuration(double d) {
     if (duration != nullptr) {
         delete duration;
     }
-    duration = &d;
+    duration = new double;
+    *duration = d;
 }
 
 
@@ -66,13 +70,6 @@ void Song::setArtist(char a[]) {
     }
     artist = new char[strlen(a)+1];
     strcpy(artist, a);
-}
-
-void Song::print() {
-    cout << Song::title << endl;
-    cout << Song::artist << endl;
-    cout << Song::year << endl;
-    cout << Song::duration << endl;
 }
 
 Song::~Song(){

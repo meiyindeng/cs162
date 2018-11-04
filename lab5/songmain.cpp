@@ -14,94 +14,87 @@
 #include <iostream>
 #include <cstring>
 #include "song.h"
+#include <iomanip>
 
 using namespace std;
 
-int main()
-{
-  Song * list;
-  //list is a pointer to Song Class
-  cout << "How many songs you like to add? " << endl;
-  int size;
-  cin >> size;
-  list = new Song[size];
+void printRequest(string input) {
+    cout << input << endl;
+}
+
+void gatherSongFromUser(int size, Song *list, char *title, char *artist, int year, double duration);
+
+void printSong(int size, Song *list);
+
+int askNumberOfSong();
 
 
+int main() {
+
+    Song *list;
+    //list is a pointer to Song Class
+    char title[MAX_STR];
+    char artist[MAX_STR];
+    int year=0;
+    double duration=0;
+
+    int size = askNumberOfSong();
+    list = new Song[size];
 
 
+    gatherSongFromUser(size, list, title, artist, year, duration);
 
 
+    printSong(size, list);
 
+    delete [] list;
 
-  //Declare Object called array with Song Class
-  //Song array[2];  // note that this uses the default constructor
+    return 0;
+}
 
-  // Save the address of first object
+// This function gather songs info from user
+void gatherSongFromUser(int size, Song *list, char *title, char *artist, int year, double duration) {
+    cout << "setting array values and getting values of array" << endl;
+    for (int i = 0; i < size; i++) {
+        cout << "for song " << i << endl;
+        printRequest("title?");
+        cin.ignore();
 
+        cin.getline(title, MAX_STR);
+        (list + i)->setTitle(title);
 
-  char title[MAX_STR];
-  char artist[MAX_STR];
-  int  year;
-  double duration;
-  
-  /*cout << "Just after array is created" << endl;
-  for(int i=0; i<2; i++)
-  {
-	  cout << "printing " << i << " song in array" << endl;
-	  array[i].print();
-  }
-  cout << endl << endl;*/
-  cout << "setting array values and getting values of array" << endl;
-  for(int i=0; i<2; i++)
-  {
-	  cout << "for song " << i << endl;
-	  cout << "title? ";
-	  cin.getline(title, MAX_STR);
-	  //array[i].setTitle(title);
-	  list[i].setTitle(char title[]);
+        printRequest("artist? ");
+        cin.getline(artist, MAX_STR);
+        (list + i)->setArtist(artist);
 
-	  cout << "artist? ";
-	  cin.getline(artist, MAX_STR);
-	  array[i].setArtist(artist[]);
-	  //list[i].setArtist(char artist);
-	  cout << "year? ";
-	  cin >> year;
-	  cin.ignore();
-	  //array[i].setYear(year);
-	  //list[i].setYear(int year);
-	  cout << "duration in minutes? ";
-	  cin >> duration;
-	  cin.ignore();
-	  //array[i].setDuration(duration);
-	  //list[i].setDuration(double duration);
-  }
+        printRequest("year?");
+        cin >> year;
+        (list + i)->setYear(year);
+        printRequest("duration in minutes");
+        cin >> duration;
+        (list + i)->setDuration(duration);
 
-  cout << endl << endl;
-  
-  for(int i=0; i<2; i++)
-  {
-      cout << endl;
-	  // Using getters to get information to print.
-	  cout << "getting song " << i << " information with getters" << endl;
-	  //array[i].getTitle(title);
-	  list[i].getTitle();
-	  cout << "title: " << title << endl;
-	  //array[i].getArtist(artist);
-	  list[i].getArtist();
-	  cout << "artist: " << artist << endl;
-	  cout << "year: " << list[i].getYear() << endl;
-	  //array[i].getYear() << endl;
-	  cout << "duration: " << list[i].getDuration() << endl;
-	  //array[i].getDuration() << endl;
-	  cout << endl;
-	  //Using a print function which is a member of the class Song
-	  //This is a better solution but wanted to have students practice
-	  // using getters.
-	  cout << "printing song " << i << " information again" << endl;
-	  //array[i].print();
-	  list[i].print();
+        cout << endl << endl;
+    }
+}
 
-  }
-  
-  return 0;
+//This function get print each song info
+void printSong(int size, Song *list) {
+    for (int i = 0; i < size; i++) {
+        cout << "printing song " << i << " information again" << endl;
+        cout << "======Song======" << endl;
+        cout << (list + i)->getTitle() << endl;
+        cout << (list + i)->getArtist() << endl;
+        cout << *(list + i)->getYear() << endl;
+        cout << *(list + i)->getDuration() << endl;
+    }
+}
+
+int askNumberOfSong() {
+    int size;
+    cout << "How many songs you like to add? " << endl;
+    cin >> size;
+
+    return size;
+
 }
