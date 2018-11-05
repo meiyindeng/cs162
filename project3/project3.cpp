@@ -39,6 +39,10 @@ int validateAndReturnUserInput(int lowNumber, int highNumber);
 
 void displayTask(int count, Task listOfTask[]);
 
+bool isSame(char a[], const char b[]);
+
+void completeTask(Task *listOfTask, int count);
+
 int main() {
     Task listOfTask[200];
     int count = 0;
@@ -46,13 +50,13 @@ int main() {
     int entry = 0;
     char taskName[30];
     char description[100];
-    int month;
-    int day;
-    int year;
-    bool complete;
+    int month = 1;
+    int day = 1;
+    int year = 2017;
+    bool complete = false;
     readTask("tasks.txt", count, listOfTask, taskName, description, month, day, year, complete);
 
-    Task meetStartDate[200];
+
 
 
     do {
@@ -75,12 +79,21 @@ int main() {
             int endMonth;
             int endYear;
             int endDay;
+            Task meetStartDate[200];
 
             requestDateRange(startMonth, startDay, startYear, endMonth, endYear, endDay);
 
             for (int i = 0; i < count; i++) {
-                if (isDateInRange(listOfTask[i].getDay(), listOfTask[i].getMonth(), listOfTask[i].getYear(), startDay, startMonth, startYear, endDay,
-                                  endMonth, endYear)) {
+                if (isDateInRange(listOfTask[i].getDay(),
+                                  listOfTask[i].getMonth(),
+                                  listOfTask[i].getYear(),
+                                  startDay,
+                                  startMonth,
+                                  startYear,
+                                  endDay,
+                                  endMonth,
+                                  endYear
+                )) {
 
                     meetStartDate[entry] = listOfTask[i];
                     entry++;
@@ -92,9 +105,13 @@ int main() {
 
         }
 
+        if (menuChoice == 3) {
+            completeTask(listOfTask, count);
+        }
+
     } while (menuChoice != 5);
 
-    writeTask("tasks1.txt", count, listOfTask);
+    writeTask("tasks.txt", count, listOfTask);
 
     return 0;
 
@@ -146,29 +163,30 @@ void readTask(string fileName, int &count, Task listOfTask[], char taskName[], c
 void addTask(int &count, Task listOfTask[], char taskName[], char description[], int month, int day, int year,
              bool complete) {
     printRequest("Enter Name:");
-    cin.clear();
+    cin.ignore();
     cin.getline(taskName, MAX_STR);
-    listOfTask[count].setTaskName(taskName);
+    Task &task = listOfTask[count];
+    task.setTaskName(taskName);
 
     printRequest("Enter Description (all on one line):");
     cin.getline(description, MAX_STR2);
-    listOfTask[count].setDescription(description);
+    task.setDescription(description);
 
     printRequest("Entering Due Date:");
     requestDate("Month", 1, 12);
     month = validateAndReturnUserInput(1, 12);
-    listOfTask[count].setMonth(month);
+    task.setMonth(month);
 
     requestDate("Day", 1, 31);
     day = validateAndReturnUserInput(1, 31);
-    listOfTask[count].setDay(day);
+    task.setDay(day);
 
     requestDate("Year", 2017, 2067);
     year = validateAndReturnUserInput(2017, 2067);
-    listOfTask[count].setYear(year);
+    task.setYear(year);
 
     complete = 0;
-    listOfTask[count].setComplete(complete);
+    task.setComplete(complete);
     count++;
 }
 
@@ -178,18 +196,16 @@ void printRequest(string input) {
 }
 
 void displayTask(int count, Task listOfTask[]) {
-    char task[MAX_STR];
-    char des[MAX_STR2];
     for (int i = 0; i < count; i++) {
-        listOfTask[i].getTaskName(task);
-        printf("Task Name: %s", task);
+        Task &currentTask = listOfTask[i];
+
+        printf("Task Name: %s", currentTask.getTaskName());
         cout << endl;
-        listOfTask[i].getDescription(des);
-        printf("Task Description: %s", des);
+        printf("Task Description: %s", currentTask.getDescription());
         cout << endl;
-        cout << "Month: " << listOfTask[i].getMonth() << "/" << listOfTask[i].getDay() << "/" << listOfTask[i].getYear()
+        cout << "Month: " << currentTask.getMonth() << "/" << currentTask.getDay() << "/" << currentTask.getYear()
              << endl;
-        if (listOfTask[i].getComplete() == 1) {
+        if (currentTask.getComplete() == 1) {
             cout << "Task is: COMPLETE" << endl;
         } else cout << "Task is: NOT COMPLETE" << endl;
     }
@@ -222,8 +238,9 @@ void menuPrompt() {
     cout << "*********MAIN MENU**********" << endl;
     cout << "1 - PRINT ALL Tasks" << endl;
     cout << "2 - Print Tasks in Date Range" << endl;
-    cout << "3 - Add Task" << endl;
-    cout << "4 - Quit" << endl;
+    cout << "3 - Complete a task" << endl;
+    cout << "4 - Add Task" << endl;
+    cout << "5 - Quit" << endl;
     cout << "Enter choice:";
 }
 
@@ -264,21 +281,54 @@ void writeTask(string outFileName, int count, Task *listOfTask) {
     ofstream outFile;
     outFile.open(outFileName);
 
-    char taskName[30];
-    char description[100];
+    for (int i = 0; i < count; i++) {
+        Task &task = listOfTask[i];
 
-    for (int i = 0; i < count; i++){
-        listOfTask[i].getTaskName(taskName);
-        outFile << taskName << endl;
-        listOfTask[i].getDescription(description);
-        outFile <<  description << endl;
-        outFile << listOfTask[i].getMonth() << endl;
-        outFile << listOfTask[i].getDay() << endl;
-        outFile << listOfTask[i].getYear() << endl;
-        outFile << listOfTask[i].getComplete() << endl;
+        outFile << task.getTaskName() << endl;
+        outFile << task.getDescription() << endl;
+        outFile << task.getMonth() << endl;
+        outFile << task.getDay() << endl;
+        outFile << task.getYear() << endl;
+        outFile << task.getComplete() << endl;
     }
     outFile.close();
 }
+
+
+void completeTask(Task *listOfTask, int count) {
+    char taskName[MAX_STR];
+    printRequest("Enter name of task to complete");
+    cin.ignore();
+    cin.getline(taskName, MAX_STR);
+    for (int i = 0; i < count; i++) {
+        Task &task = listOfTask[i];
+        if (isSame(taskName, task.getTaskName())) {
+            task.setComplete(true);
+            cout << "the task " << taskName << " has been completed" << endl;
+            return;
+        }
+
+    }
+    cout << "task " << taskName << " was not found in the list" << endl;
+
+}
+
+
+bool isSame(char a[], const char b[]) {
+    for (int i = 0; a[i] != '\0'; i++) {
+        if (a[i] != b[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
+
+//ask name of the task
+//if the name of the task does match, display not found in list
+//change complete status
 
 
 

@@ -9,10 +9,10 @@ using namespace std;
 Task::Task() {
     taskName[0] = '\0';
     description[0] = '\0';
-    //month = 0;
-    //day = 0;
-    //year = 0;
-    //complete = 0;
+    month = 0;
+    day = 0;
+    year = 0;
+    complete = 0;
 }
 
 
@@ -20,16 +20,13 @@ void Task::setTaskName(char n[]) {
     strcpy(taskName, n);
 }
 
-void Task::getTaskName(char *tn) {
-    strcpy(tn, Task::taskName);
-}
 
 void Task::setDescription(char d[]) {
     strcpy(description, d);
 }
 
-void Task::getDescription(char *d){
-    strcpy(d, Task::description);
+const char * Task::getDescription() {
+    return description;
 }
 
 void Task::setMonth(int m) {
@@ -55,14 +52,17 @@ int Task::getYear() {
     return year;
 }
 
-void Task::setComplete(bool c){
-    complete = c;
+void Task::setComplete(bool b){
+    complete = b;
 }
 
 bool Task::getComplete() {
     return complete;
 }
 
+const char * Task::getTaskName(){
+    return taskName;
+}
 
 Task::~Task() {
 

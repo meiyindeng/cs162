@@ -14,18 +14,19 @@ class Task{
 		Task();
 
 		void setTaskName(char taskName[]);
-        void getTaskName(char *tn);
         void setDescription(char description[]);
-        void getDescription (char *d);
 		void setMonth(int m);
 		int getMonth();
 		void setDay(int d);
 		int getDay();
 		void setYear(int y);
 		int getYear();
-		void setComplete(bool);
+		void setComplete(bool b);
 		bool getComplete();
+		const char * getTaskName();
+		const char * getDescription();
 
-    ~Task();
+
+		~Task();
 };
 
