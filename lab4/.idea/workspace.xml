@@ -10,33 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6df5652d-534a-4ec3-b472-fb4be94782cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/notes12/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/notes12/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/notes12/.idea/notes12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/notes12/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/notes12/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/notes12/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../project3/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Notes/Chapter12Pointer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Notes/Chapter12Pointer/dlist.cp" beforeDir="false" afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/dlist.cp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Notes/Chapter12Pointer/dlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/dlist.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Notes/Chapter12Pointer/main.cp" beforeDir="false" afterPath="$PROJECT_DIR$/../Notes/Chapter12Pointer/main.cp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project2/project2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Project2/project2.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/song.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/song.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/prog" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/prog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/song.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/songmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/songmain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab5/typesript.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../project1" beforeDir="false" afterPath="$PROJECT_DIR$/../project1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project1 2" beforeDir="false" afterPath="$PROJECT_DIR$/../project1 2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project3/cmake-build-debug/CMakeFiles/project3.dir/project3.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/cmake-build-debug/CMakeFiles/project3.dir/project3.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project3/cmake-build-debug/CMakeFiles/project3.dir/task.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/cmake-build-debug/CMakeFiles/project3.dir/task.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project3/cmake-build-debug/project3" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/cmake-build-debug/project3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project3/project3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/project3.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project3/task.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/task.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project3/task.h" beforeDir="false" afterPath="$PROJECT_DIR$/../project3/task.h" afterDir="false" />
     </list>

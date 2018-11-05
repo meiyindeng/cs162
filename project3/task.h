@@ -5,22 +5,27 @@
 class Task{
     private:
 		char taskName [MAX_STR];
-		/*char description [MAX_STR2];
+		char description [MAX_STR2];
 		int month;
 		int day;
 		int year;
-		bool complete;*/
+		bool complete;
     public:
 		Task();
 
 		void setTaskName(char taskName[]);
         void getTaskName(char *tn);
-    /*void setDescription(char description[]);
+        void setDescription(char description[]);
+        void getDescription (char *d);
 		void setMonth(int m);
+		int getMonth();
 		void setDay(int d);
+		int getDay();
 		void setYear(int y);
-		void setComplete(bool);*/
-        void print();
+		int getYear();
+		void setComplete(bool);
+		bool getComplete();
+
     ~Task();
 };
 

@@ -22,15 +22,15 @@ bool checkMenuChoice(int menuChoice);
 
 int menuResult(int menuChoice);
 
-void readTask(string fileName, int &count, taskType Task[]);
+//void readTask(string fileName, int &count, taskType Task[]);
 
-void displayTask(int &count, taskType Task[]);
+//void displayTask(int &count, taskType Task[]);
 
-void requestDate (string typeOfTime, int begin, int end);
+//void requestDate (string typeOfTime, int begin, int end);
 
-int validateAndReturnUserInput(int lowNumber, int highNumber);
+//int validateAndReturnUserInput(int lowNumber, int highNumber);
 
-void addTask(int &count, taskType Task[]);
+//void addTask(int &count, taskType Task[]);
 
 void requestDateRange(int& startMonth, int& startDay, int& startYear, int& endMonth, int& endYear, int& endDay);
 
