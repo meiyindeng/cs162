@@ -22,18 +22,18 @@ void requestDateRange(int &startMonth, int &startDay, int &startYear, int &endMo
 bool isDateInRange(int day, int month, int year, int startDay, int startMonth, int startYear, int endDay, int endMonth,
                    int endYear);
 
-void writeTask(string outFileName, int count, Task *listOfTask);
+void writeTask(const char *outFileName, int count, Task *listOfTask);
 
-void readTask(string fileName, int &count, Task listOfTask[], char taskName[], char description[], int month, int day,
+void readTask(const char *fileName, int &count, Task *listOfTask, char *taskName, char *description, int month, int day,
               int year, bool complete);
 
 void addTask(int &count, Task listOfTask[], char taskName[], char description[], int month, int day, int year,
              bool complete);
 
 
-void printRequest(string input);
+void printRequest(const char *input);
 
-void requestDate(string typeOfTime, int begin, int end);
+void requestDate(const char *typeOfTime, int begin, int end);
 
 int validateAndReturnUserInput(int lowNumber, int highNumber);
 
@@ -43,11 +43,13 @@ bool isSame(char a[], const char b[]);
 
 void completeTask(Task *listOfTask, int count);
 
+void handleMenu2 (int count, Task * listOfTask);
+
 int main() {
     Task listOfTask[200];
     int count = 0;
     int menuChoice;
-    int entry = 0;
+
     char taskName[30];
     char description[100];
     int month = 1;
@@ -73,36 +75,7 @@ int main() {
         }
 
         if (menuChoice == 2) {
-            int startMonth;
-            int startDay;
-            int startYear;
-            int endMonth;
-            int endYear;
-            int endDay;
-            Task meetStartDate[200];
-
-            requestDateRange(startMonth, startDay, startYear, endMonth, endYear, endDay);
-
-            for (int i = 0; i < count; i++) {
-                if (isDateInRange(listOfTask[i].getDay(),
-                                  listOfTask[i].getMonth(),
-                                  listOfTask[i].getYear(),
-                                  startDay,
-                                  startMonth,
-                                  startYear,
-                                  endDay,
-                                  endMonth,
-                                  endYear
-                )) {
-
-                    meetStartDate[entry] = listOfTask[i];
-                    entry++;
-                }
-            }
-
-            displayTask(entry, meetStartDate);
-
-
+            handleMenu2(count, listOfTask);
         }
 
         if (menuChoice == 3) {
@@ -118,21 +91,22 @@ int main() {
 
 
 
-    //listOfTask[count].print();
 
 
 
 }
 
-void readTask(string fileName, int &count, Task listOfTask[], char taskName[], char description[], int month, int day,
+void readTask(const char *fileName, int &count, Task *listOfTask, char *taskName, char *description, int month, int day,
               int year, bool complete) {
     count = 0;
     ifstream taskInputFile(fileName);
     char c = taskInputFile.peek();
 
-    if (!taskInputFile) {
-        cout << "could not open file" << endl;
+
+    if(taskInputFile.fail()){
+        return;
     }
+
 
     while (!taskInputFile.eof() && c != '\n') {
         taskInputFile.getline(taskName, MAX_STR);
@@ -156,6 +130,10 @@ void readTask(string fileName, int &count, Task listOfTask[], char taskName[], c
         count++;
         c = taskInputFile.peek();
     }
+
+    taskInputFile.close();
+
+
 }
 
 
@@ -191,7 +169,7 @@ void addTask(int &count, Task listOfTask[], char taskName[], char description[],
 }
 
 
-void printRequest(string input) {
+void printRequest(const char *input) {
     cout << input << endl;
 }
 
@@ -216,7 +194,7 @@ void displayTask(int count, Task listOfTask[]) {
 //month should be range from 1 to 12
 //day should be range from 1 to 31
 //year should be range from 2017 to 2067
-void requestDate(string typeOfTime, int begin, int end) {
+void requestDate(const char *typeOfTime, int begin, int end) {
     cout << "Enter " << typeOfTime << " (" << begin << " to " << end << "):" << endl;
 }
 
@@ -277,7 +255,7 @@ bool isDateInRange(int day, int month, int year, int startDay, int startMonth, i
     return entryDate >= startDate && entryDate <= endDate;
 }
 
-void writeTask(string outFileName, int count, Task *listOfTask) {
+void writeTask(const char *outFileName, int count, Task *listOfTask) {
     ofstream outFile;
     outFile.open(outFileName);
 
@@ -323,12 +301,45 @@ bool isSame(char a[], const char b[]) {
     return true;
 }
 
-
-
-
 //ask name of the task
 //if the name of the task does match, display not found in list
 //change complete status
+
+
+void handleMenu2 (int count, Task * listOfTask){
+    int startMonth;
+    int startDay;
+    int startYear;
+    int endMonth;
+    int endYear;
+    int endDay;
+    Task meetStartDate[200];
+    int entry = 0;
+
+    requestDateRange(startMonth, startDay, startYear, endMonth, endYear, endDay);
+
+    for (int i = 0; i < count; i++) {
+        Task &task = listOfTask[i];
+        if (isDateInRange(task.getDay(),
+                          task.getMonth(),
+                          task.getYear(),
+                          startDay,
+                          startMonth,
+                          startYear,
+                          endDay,
+                          endMonth,
+                          endYear
+        )) {
+
+            meetStartDate[entry] = listOfTask[i];
+            entry++;
+        }
+    }
+
+    displayTask(entry, meetStartDate);
+
+}
+
 
 
 
