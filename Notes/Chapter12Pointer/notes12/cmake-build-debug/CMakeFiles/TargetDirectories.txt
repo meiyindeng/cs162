@@ -1,3 +1,0 @@
-/Users/meiyindeng/Documents/cs162/Notes/Chapter12Pointer/notes12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/meiyindeng/Documents/cs162/Notes/Chapter12Pointer/notes12/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/meiyindeng/Documents/cs162/Notes/Chapter12Pointer/notes12/cmake-build-debug/CMakeFiles/notes12.dir
