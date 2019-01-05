@@ -1,0 +1,155 @@
+Script started on Sun 16 Dec 2018 07:33:18 AM UTC
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# make
+g++ -c -Wall project5.cpp
+g++ -c -Wall Task.cpp
+g++ -c -Wall TaskList.cpp
+g++ -c -Wall Node.cpp
+g++ project5.o Task.o TaskList.o Node.o -o prog
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# ./po[Krog
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:1
+TaskName: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: COMPLETE
+TaskName: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+TaskName: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is NOT COMPLETE
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:5
+Enter Name:
+A New Task
+Enter Description (all on one line):
+A New Description
+Entering Due Date:
+Enter Month (1 to 12):
+7
+Enter Day (1 to 31):
+20
+Enter Year (2017 to 2067):
+2018
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:1
+TaskName: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: COMPLETE
+TaskName: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+TaskName: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is NOT COMPLETE
+TaskName: A New Task
+Task Description: A New Description
+Month: 7/20/2018
+Task is NOT COMPLETE
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:6
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# valgrin [Kd --tool=memcheck --leak-chec k=full prog
+The program 'valgrind' is currently not installed. You can install it by typing:
+apt install valgrind
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# apt install valgrind
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 2%Reading state information... Done
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'apt autoremove' to remove it.
+The following additional packages will be installed:
+  gdb gdbserver libbabeltrace-ctf1 libbabeltrace1 libc6-dbg
+Suggested packages:
+  gdb-doc valgrind-dbg kcachegrind alleyoop valkyrie
+The following NEW packages will be installed:
+  gdb gdbserver libbabeltrace-ctf1 libbabeltrace1 libc6-dbg valgrind
+0 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
+Need to get 17.7 MB of archives.
+After this operation, 101 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+[33m0% [Working][0m            Get:1 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 libbabeltrace1 amd64 1.3.2-1 [34.7 kB]
+[33m0% [1 libbabeltrace1 0 B/34.7 kB 0%][0m[33m                                    3% [Working][0m            Get:2 http://mirrors.digitalocean.com/ubuntu xenial/main amd64 libbabeltrace-ctf1 amd64 1.3.2-1 [88.3 kB]
+[33m3% [2 libbabeltrace-ctf1 0 B/88.3 kB 0%][0m[33m                                        7% [Working][0m            Get:3 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 gdb amd64 7.11.1-0ubuntu1~16.5 [2,526 kB]
+[33m7% [3 gdb 0 B/2,526 kB 0%][0m[33m9% [3 gdb 425 kB/2,526 kB 17%][0m[33m18% [3 gdb 2,466 kB/2,526 kB 98%][0m[33m                                 22% [Working][0m             Get:4 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 gdbserver amd64 7.11.1-0ubuntu1~16.5 [172 kB]
+[33m22% [4 gdbserver 0 B/172 kB 0%][0m[33m                               26% [Working][0m             Get:5 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 libc6-dbg amd64 2.23-0ubuntu10 [3,683 kB]
+[33m26% [5 libc6-dbg 0 B/3,683 kB 0%][0m[33m                                 46% [Working][0m             Get:6 http://mirrors.digitalocean.com/ubuntu xenial-updates/main amd64 valgrind amd64 1:3.11.0-1ubuntu4.2 [11.2 MB]
+[33m47% [6 valgrind 149 kB/11.2 MB 1%][0m[33m81% [6 valgrind 7,781 kB/11.2 MB 69%][0m[33m                                     100% [Working][0m              Fetched 17.7 MB in 3s (4,715 kB/s)
+
+7[0;24r8[1ASelecting previously unselected package libbabeltrace1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59613 files and directories currently installed.)
+Preparing to unpack .../libbabeltrace1_1.3.2-1_amd64.deb ...
+7[25;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[25;0f[42m[30mProgress: [  3%][49m[39m [##........................................................] 8Unpacking libbabeltrace1:amd64 (1.3.2-1) ...
+7[25;0f[42m[30mProgress: [  6%][49m[39m [####......................................................] 87[25;0f[42m[30mProgress: [  9%][49m[39m [######....................................................] 8Selecting previously unselected package libbabeltrace-ctf1:amd64.
+Preparing to unpack .../libbabeltrace-ctf1_1.3.2-1_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 12%][49m[39m [########..................................................] 8Unpacking libbabeltrace-ctf1:amd64 (1.3.2-1) ...
+7[25;0f[42m[30mProgress: [ 16%][49m[39m [##########................................................] 87[25;0f[42m[30mProgress: [ 19%][49m[39m [############..............................................] 8Selecting previously unselected package gdb.
+Preparing to unpack .../gdb_7.11.1-0ubuntu1~16.5_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 22%][49m[39m [##############............................................] 8Unpacking gdb (7.11.1-0ubuntu1~16.5) ...
+7[25;0f[42m[30mProgress: [ 25%][49m[39m [###############...........................................] 87[25;0f[42m[30mProgress: [ 29%][49m[39m [#################.........................................] 8Selecting previously unselected package gdbserver.
+Preparing to unpack .../gdbserver_7.11.1-0ubuntu1~16.5_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 32%][49m[39m [###################.......................................] 8Unpacking gdbserver (7.11.1-0ubuntu1~16.5) ...
+7[25;0f[42m[30mProgress: [ 35%][49m[39m [#####################.....................................] 87[25;0f[42m[30mProgress: [ 38%][49m[39m [#######################...................................] 8Selecting previously unselected package libc6-dbg:amd64.
+Preparing to unpack .../libc6-dbg_2.23-0ubuntu10_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 41%][49m[39m [#########################.................................] 8Unpacking libc6-dbg:amd64 (2.23-0ubuntu10) ...
+7[25;0f[42m[30mProgress: [ 45%][49m[39m [###########################...............................] 87[25;0f[42m[30mProgress: [ 48%][49m[39m [#############################.............................] 8Selecting previously unselected package valgrind.
+Preparing to unpack .../valgrind_1%3a3.11.0-1ubuntu4.2_amd64.deb ...
+7[25;0f[42m[30mProgress: [ 51%][49m[39m [##############################............................] 8Unpacking valgrind (1:3.11.0-1ubuntu4.2) ...
+7[25;0f[42m[30mProgress: [ 54%][49m[39m [################################..........................] 87[25;0f[42m[30mProgress: [ 58%][49m[39m [##################################........................] 8Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up libbabeltrace1:amd64 (1.3.2-1) ...
+7[25;0f[42m[30mProgress: [ 61%][49m[39m [####################################......................] 87[25;0f[42m[30mProgress: [ 64%][49m[39m [######################################....................] 8Setting up libbabeltrace-ctf1:amd64 (1.3.2-1) ...
+7[25;0f[42m[30mProgress: [ 67%][49m[39m [########################################..................] 87[25;0f[42m[30mProgress: [ 70%][49m[39m [##########################################................] 8Setting up gdb (7.11.1-0ubuntu1~16.5) ...
+7[25;0f[42m[30mProgress: [ 74%][49m[39m [############################################..............] 87[25;0f[42m[30mProgress: [ 77%][49m[39m [#############################################.............] 8Setting up gdbserver (7.11.1-0ubuntu1~16.5) ...
+7[25;0f[42m[30mProgress: [ 80%][49m[39m [###############################################...........] 87[25;0f[42m[30mProgress: [ 83%][49m[39m [#################################################.........] 8Setting up libc6-dbg:amd64 (2.23-0ubuntu10) ...
+7[25;0f[42m[30mProgress: [ 87%][49m[39m [###################################################.......] 87[25;0f[42m[30mProgress: [ 90%][49m[39m [#####################################################.....] 8Setting up valgrind (1:3.11.0-1ubuntu4.2) ...
+7[25;0f[42m[30mProgress: [ 93%][49m[39m [#######################################################...] 87[25;0f[42m[30mProgress: [ 96%][49m[39m [#########################################################.] 8Processing triggers for libc-bin (2.23-0ubuntu10) ...
+
+7[0;25r8[1A[J]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# V[Kvalgrind --toll[K[K[Kool=memcheck --leak-chec k+[K=full prog
+valgrind: prog: command not found
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# valgrind ­­tool=memcheck ­­leak­check=ful l prog
+valgrind: ­­tool=memcheck: command not found
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# valgrind ­­tool=memcheck ­­leak­check=ful l prog[K[K[K[Kprog[K[K[K[K[K=f[Kprog
+valgrind: ­­tool=memcheck: command not found
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# valgraind
+No command 'valgraind' found, did you mean:
+ Command 'valgrind' from package 'valgrind' (main)
+valgraind: command not found
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# g[Kvalgrind
+valgrind: no program specified
+valgrind: Use --help for more information.
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# fvalgrind -[K[K[K[K[K[K[K[K[K[K[Kvalgrind ­­tool=memcheck ­­leak­check=ful l prog[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[1P[1P[1@-[1@-[C[C[C[C[C[C[C[1P[1@t[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K--lead[Kk-chec k=prog
+valgrind: ­­--tl=memcheck: command not found
+]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# [K]0;root@ubuntu-s-2vcpu-2gb-sfo2-01: ~/Project5root@ubuntu-s-2vcpu-2gb-sfo2-01:~/Project5# exit
+
+Script done on Sun 16 Dec 2018 07:39:12 AM UTC

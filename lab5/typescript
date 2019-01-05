@@ -1,47 +1,25 @@
-Script started on Sat Nov  3 17:58:38 2018
+Script started on Thu Nov  8 23:48:13 2018
 [?1034hbash-3.2$ make
 g++ -c -Wall songmain.cpp
-g++ -c -Wall song.cpp
-g++ songmain.o song.o -o prog
-bash-3.2$ ./prog
-How many songs you like to add? 
-2
-setting array values and getting values of array
-for song 0
-title?
-All You Need Is Love
-artist? 
-The Beatles
-year?
-1967
-duration in minutes
-3.18
-
-
-for song 1
-title?
-Stairway To Heaven
-artist? 
-Led Zepplin
-year?
-1972
-duration in minutes
-5.52
-
-
-printing song 0 information again
-======Song======
-All You Need Is Love
-The Beatles
-1967
-3.18
-printing song 1 information again
-======Song======
-Stairway To Heaven
-Led Zepplin
-1972
-5.52
-bash-3.2$ exit
+[1msongmain.cpp:43:9: [0m[0;1;31merror: [0m[1mredefinition of 'size'[0m
+    int size;
+[0;1;32m        ^
+[0m[1msongmain.cpp:41:9: [0m[0;1;30mnote: [0mprevious definition is here[0m
+    int size = askNumberOfSong();
+[0;1;32m        ^
+[0m[1msongmain.cpp:45:21: [0m[0;1;31merror: [0m[1mredefinition of 'i'[0m
+    for (int i = 0, i < size, i++){
+[0;1;32m                    ^
+[0m[1msongmain.cpp:45:14: [0m[0;1;30mnote: [0mprevious definition is here[0m
+    for (int i = 0, i < size, i++){
+[0;1;32m             ^
+[0m[1msongmain.cpp:45:23: [0m[0;1;31merror: [0m[1mexpected ';' in 'for' statement specifier[0m
+    for (int i = 0, i < size, i++){
+[0;1;32m                      ^
+[0m[1msongmain.cpp:45:23: [0m[0;1;31merror: [0m[1mexpected expression[0m
+4 errors generated.
+make: *** [songmain.o] Error 1
+bash-3.2$ ls[K[Kexit
 exit
 
-Script done on Sat Nov  3 17:59:33 2018
+Script done on Thu Nov  8 23:50:25 2018

@@ -1,0 +1,30 @@
+I. Recursion: the process of solving a problem by reducing it to smaller version of itself.
+	Ex: n!; base case 1: 0!=1; - solution obtained directly 
+		general case 2: n!= n * (n-a) if n > 0; eventually reduced to a base case.
+		3! = 3 * 2 * 1 * 1 = 6
+		The right side contains no factorial notation
+		The base case stops the recursion
+	Recursive Algorithm: finds the solution to a given problem by reducing the problem to smaller version of itself.
+	Recursive function: a function that calls itself.
+	int factorial (int num){
+		if (num == 0){
+			return 1;
+		}
+		else{
+			return num * factorial (num-1);
+		}
+	}
+	Direct and Indirect Recursion
+		Direct - a function calls itself
+		Indirect - a function that calls another function and eventually results in the original function.
+	Tail recursive Function - last statement executed is the recursive call
+	Make sure recursive call eventually reduces to a base case
+	1. Understand the problem requirements
+	2. Determine the limiting conditions (Number of elements in the list can be a limiting condition)
+	3. Identify the base cases and provide a direct solution to each base case.
+	4. Identify the general cases and provide a solution to each general case (in terms of smaller versions of itself)
+
+Problem Solving Using Recursion
+	1. Find the largest element in an array
+	
+	

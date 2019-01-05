@@ -123,6 +123,33 @@ project3/fast:
 	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/build
 .PHONY : project3/fast
 
+Tasklist.o: Tasklist.cpp.o
+
+.PHONY : Tasklist.o
+
+# target to build an object file
+Tasklist.cpp.o:
+	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/Tasklist.cpp.o
+.PHONY : Tasklist.cpp.o
+
+Tasklist.i: Tasklist.cpp.i
+
+.PHONY : Tasklist.i
+
+# target to preprocess a source file
+Tasklist.cpp.i:
+	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/Tasklist.cpp.i
+.PHONY : Tasklist.cpp.i
+
+Tasklist.s: Tasklist.cpp.s
+
+.PHONY : Tasklist.s
+
+# target to generate assembly for a file
+Tasklist.cpp.s:
+	$(MAKE) -f CMakeFiles/project3.dir/build.make CMakeFiles/project3.dir/Tasklist.cpp.s
+.PHONY : Tasklist.cpp.s
+
 project3.o: project3.cpp.o
 
 .PHONY : project3.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... project3"
+	@echo "... Tasklist.o"
+	@echo "... Tasklist.i"
+	@echo "... Tasklist.s"
 	@echo "... project3.o"
 	@echo "... project3.i"
 	@echo "... project3.s"

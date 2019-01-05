@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/project5.dir/project5.cpp.o CMakeFiles/project5.dir/Task.cpp.o CMakeFiles/project5.dir/TaskList.cpp.o CMakeFiles/project5.dir/Node.cpp.o  -o project5 

@@ -1,0 +1,3 @@
+/Users/meiyindeng/Documents/cs162/lab6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/meiyindeng/Documents/cs162/lab6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/meiyindeng/Documents/cs162/lab6/cmake-build-debug/CMakeFiles/lab6.dir

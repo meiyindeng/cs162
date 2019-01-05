@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lab4
+# Target rules for targets named lab5
 
 # Build rule for target.
-Lab4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Lab4
-.PHONY : Lab4
+lab5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab5
+.PHONY : lab5
 
 # fast build rule for target.
-Lab4/fast:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/build
-.PHONY : Lab4/fast
+lab5/fast:
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/build
+.PHONY : lab5/fast
 
 song.o: song.cpp.o
 
@@ -129,7 +129,7 @@ song.o: song.cpp.o
 
 # target to build an object file
 song.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/song.cpp.o
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/song.cpp.o
 .PHONY : song.cpp.o
 
 song.i: song.cpp.i
@@ -138,7 +138,7 @@ song.i: song.cpp.i
 
 # target to preprocess a source file
 song.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/song.cpp.i
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/song.cpp.i
 .PHONY : song.cpp.i
 
 song.s: song.cpp.s
@@ -147,35 +147,35 @@ song.s: song.cpp.s
 
 # target to generate assembly for a file
 song.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/song.cpp.s
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/song.cpp.s
 .PHONY : song.cpp.s
 
-songmain.o: songmain.cpp.o
+songmain2.o: songmain2.cpp.o
 
-.PHONY : songmain.o
+.PHONY : songmain2.o
 
 # target to build an object file
-songmain.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/songmain.cpp.o
-.PHONY : songmain.cpp.o
+songmain2.cpp.o:
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/songmain2.cpp.o
+.PHONY : songmain2.cpp.o
 
-songmain.i: songmain.cpp.i
+songmain2.i: songmain2.cpp.i
 
-.PHONY : songmain.i
+.PHONY : songmain2.i
 
 # target to preprocess a source file
-songmain.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/songmain.cpp.i
-.PHONY : songmain.cpp.i
+songmain2.cpp.i:
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/songmain2.cpp.i
+.PHONY : songmain2.cpp.i
 
-songmain.s: songmain.cpp.s
+songmain2.s: songmain2.cpp.s
 
-.PHONY : songmain.s
+.PHONY : songmain2.s
 
 # target to generate assembly for a file
-songmain.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/songmain.cpp.s
-.PHONY : songmain.cpp.s
+songmain2.cpp.s:
+	$(MAKE) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/songmain2.cpp.s
+.PHONY : songmain2.cpp.s
 
 # Help Target
 help:
@@ -185,13 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Lab4"
+	@echo "... lab5"
 	@echo "... song.o"
 	@echo "... song.i"
 	@echo "... song.s"
-	@echo "... songmain.o"
-	@echo "... songmain.i"
-	@echo "... songmain.s"
+	@echo "... songmain2.o"
+	@echo "... songmain2.i"
+	@echo "... songmain2.s"
 .PHONY : help
 
 

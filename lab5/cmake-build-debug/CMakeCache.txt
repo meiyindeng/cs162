@@ -142,7 +142,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Lab5
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -211,6 +211,12 @@ Lab5_SOURCE_DIR:STATIC=/Users/meiyindeng/Documents/cs162/lab5
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/Users/meiyindeng/Documents/cs162/lab5/cmake-build-debug
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/Users/meiyindeng/Documents/cs162/lab5
 
 
 ########################

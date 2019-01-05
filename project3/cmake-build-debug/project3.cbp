@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/meiyindeng/Documents/cs162/project3/Tasklist.cpp">
+			<Option target="project3"/>
+		</Unit>
+		<Unit filename="/Users/meiyindeng/Documents/cs162/project3/Tasklist.h">
+			<Option target="project3"/>
+		</Unit>
 		<Unit filename="/Users/meiyindeng/Documents/cs162/project3/project3.cpp">
 			<Option target="project3"/>
 		</Unit>

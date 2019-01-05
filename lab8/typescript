@@ -1,0 +1,407 @@
+Script started on Sat Dec  1 00:44:16 2018
+[?1034hbash-3.2$ g++ lab8.cpp 0[K-o lab8 && ./lb[Kab8
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+1
+enter student name: 
+Alice Smith
+enter student ID (positive number): 
+60
+enter student grade (1.0 to 4.0):  
+3.5
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 60
+name: Alice Smith
+grade: 3.50
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+1
+enter student name: 
+Frank Walker
+enter student ID (positive number): 
+3 40
+enter student grade (1.0 to 4.0):  
+3.44
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 40
+name: Frank Walker
+grade: 3.44
+ID: 60
+name: Alice Smith
+grade: 3.50
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+1
+enter student name: 
+Adele Mann
+enter student ID (positive number): 
+70
+enter student grade (1.0 to 4.0):  
+2.3
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 40
+name: Frank Walker
+grade: 3.44
+ID: 60
+name: Alice Smith
+grade: 3.50
+ID: 70
+name: Adele Mann
+grade: 2.30
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+3
+Enter student ID to delete
+60
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 40
+name: Frank Walker
+grade: 3.44
+ID: 70
+name: Adele Mann
+grade: 2.30
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+3
+Enter student ID to delete
+40
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 70
+name: Adele Mann
+grade: 2.30
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2 3
+Enter student ID to delete
+70
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+No data in the list
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+4
+bash-3.2$ valgrind --tool=memcheck --leak-check+[K=full ./lab8
+==58998== Memcheck, a memory error detector
+==58998== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==58998== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==58998== Command: ./lab8
+==58998== 
+--58998-- run: /usr/bin/dsymutil "./lab8"
+[0;1;35mwarning: [0mno debug symbols in executable (-arch x86_64)
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+1
+enter student name: 
+Alice Smith
+enter student ID (positive number): 
+60
+enter student grade (1.0 to 4.0):  
+3.5
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 60
+name: Alice Smith
+grade: 3.50
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+1
+enter student name: 
+Frank Walker
+enter student ID (positive number): 
+40
+enter student grade (1.0 to 4.0):  
+3.44
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 40
+name: Frank Walker
+grade: 3.44
+ID: 60
+name: Alice Smith
+grade: 3.50
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+1
+enter student name: 
+Adele Mann
+enter student ID (positive number): 
+70
+enter student grade (1.0 to 4.0):  
+2.3
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 40
+name: Frank Walker
+grade: 3.44
+ID: 60
+name: Alice Smith
+grade: 3.50
+ID: 70
+name: Adele Mann
+grade: 2.30
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+3
+Enter student ID to delete
+60
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+ID: 40
+name: Frank Walker
+grade: 3.44
+ID: 70
+name: Adele Mann
+grade: 2.30
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+40
+invalid input, please re-enter
+Enter data =>
+3
+Enter student ID to delete
+40
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+3
+Enter student ID to delete
+70
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+2
+No data in the list
+????? What do you want to do ?????
+1. add student
+2. print all students
+3. delete student
+4. quit
+Enter data =>
+4
+==58998== 
+==58998== HEAP SUMMARY:
+==58998==     in use at exit: 26,835 bytes in 175 blocks
+==58998==   total heap usage: 208 allocs, 33 frees, 35,811 bytes allocated
+==58998== 
+==58998== 64 bytes in 1 blocks are definitely lost in loss record 26 of 53
+==58998==    at 0x1000AF6EA: calloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x100847BA4: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C5A: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C5A: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C5A: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846363: _read_images (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100844AC4: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998==    by 0x100844075: _objc_init (in /usr/lib/libobjc.A.dylib)
+==58998== 
+==58998== 64 bytes in 1 blocks are definitely lost in loss record 27 of 53
+==58998==    at 0x1000AF6EA: calloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x100847BA4: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C72: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C5A: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C5A: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C5A: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846363: _read_images (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100844AC4: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998== 
+==58998== 72 bytes in 3 blocks are possibly lost in loss record 28 of 53
+==58998==    at 0x1000AF6EA: calloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x1008447E2: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998==    by 0x100844075: _objc_init (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100299B34: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==58998==    by 0x100299B1B: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==58998==    by 0x1001749C2: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+==58998==    by 0x10001CAC5: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==58998==    by 0x10001CCF5: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+==58998== 
+==58998== 80 (32 direct, 48 indirect) bytes in 1 blocks are definitely lost in loss record 30 of 53
+==58998==    at 0x1000AF2FE: malloc_zone_malloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x100846AA1: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846A50: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846950: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008468FA: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008453CB: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008450DA: sel_init (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008449AD: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998== 
+==58998== 144 (32 direct, 112 indirect) bytes in 1 blocks are definitely lost in loss record 33 of 53
+==58998==    at 0x1000AF2FE: malloc_zone_malloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x100846A80: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846A50: NXCreateHashTable (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846950: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008468FA: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008453CB: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008450DA: sel_init (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008449AD: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998== 
+==58998== 192 bytes in 3 blocks are definitely lost in loss record 38 of 53
+==58998==    at 0x1000AF6EA: calloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x100847BA4: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100847C72: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100846363: _read_images (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100844AC4: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998==    by 0x100844075: _objc_init (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100299B34: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==58998==    by 0x100299B1B: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+==58998== 
+==58998== 4,136 (24 direct, 4,112 indirect) bytes in 1 blocks are definitely lost in loss record 53 of 53
+==58998==    at 0x1000AF2FE: malloc_zone_malloc (in /usr/local/Cellar/valgrind/3.14.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
+==58998==    by 0x100846928: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008468FA: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008453CB: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008450DA: sel_init (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008449AD: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x1008577DA: objc_object::sidetable_retainCount() (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x10000AC64: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*), bool, bool) (in /usr/lib/dyld)
+==58998==    by 0x10000AE39: dyld::registerObjCNotifiers(void (*)(unsigned int, char const* const*, mach_header const* const*), void (*)(char const*, mach_header const*), void (*)(char const*, mach_header const*)) (in /usr/lib/dyld)
+==58998==    by 0x10030F71D: _dyld_objc_notify_register (in /usr/lib/system/libdyld.dylib)
+==58998==    by 0x100844075: _objc_init (in /usr/lib/libobjc.A.dylib)
+==58998==    by 0x100299B34: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+==58998== 
+==58998== LEAK SUMMARY:
+==58998==    definitely lost: 408 bytes in 8 blocks
+==58998==    indirectly lost: 6,864 bytes in 7 blocks
+==58998==      possibly lost: 72 bytes in 3 blocks
+==58998==    still reachable: 8,548 bytes in 11 blocks
+==58998==         suppressed: 10,943 bytes in 146 blocks
+==58998== Reachable blocks (those to which a pointer was found) are not shown.
+==58998== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==58998== 
+==58998== For counts of detected and suppressed errors, rerun with: -v
+==58998== ERROR SUMMARY: 7 errors from 7 contexts (suppressed: 8 from 8)
+bash-3.2$ exit
+exit
+
+Script done on Sat Dec  1 00:52:29 2018

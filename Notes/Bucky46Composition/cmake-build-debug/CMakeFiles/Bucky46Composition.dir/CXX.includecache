@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/Birthday.cpp
+iostream
+-
+Birthday.h
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/Birthday.h
+
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/Birthday.h
+
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/People.cpp
+iostream
+-
+Birthday.h
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/Birthday.h
+People.h
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/People.h
+
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/People.h
+Birthday.h
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/Birthday.h
+string
+-
+
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/main.cpp
+iostream
+-
+Birthday.h
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/Birthday.h
+People.h
+/Users/meiyindeng/Documents/cs162/Notes/Bucky46Composition/People.h
+

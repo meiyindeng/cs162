@@ -1,0 +1,47 @@
+Script started on Sat Nov  3 17:58:38 2018
+[?1034hbash-3.2$ make
+g++ -c -Wall songmain.cpp
+g++ -c -Wall song.cpp
+g++ songmain.o song.o -o prog
+bash-3.2$ ./prog
+How many songs you like to add? 
+2
+setting array values and getting values of array
+for song 0
+title?
+All You Need Is Love
+artist? 
+The Beatles
+year?
+1967
+duration in minutes
+3.18
+
+
+for song 1
+title?
+Stairway To Heaven
+artist? 
+Led Zepplin
+year?
+1972
+duration in minutes
+5.52
+
+
+printing song 0 information again
+======Song======
+All You Need Is Love
+The Beatles
+1967
+3.18
+printing song 1 information again
+======Song======
+Stairway To Heaven
+Led Zepplin
+1972
+5.52
+bash-3.2$ exit
+exit
+
+Script done on Sat Nov  3 17:59:33 2018

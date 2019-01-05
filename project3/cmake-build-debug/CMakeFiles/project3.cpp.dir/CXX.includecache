@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/meiyindeng/Documents/cs162/project3/task.cpp
+iostream
+-
+string
+-
+task.h
+/Users/meiyindeng/Documents/cs162/project3/task.h
+stdio.h
+-
+stdlib.h
+-
+
+/Users/meiyindeng/Documents/cs162/project3/task.h
+

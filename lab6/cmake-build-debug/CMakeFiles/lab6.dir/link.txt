@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lab6.dir/songmain2.cpp.o CMakeFiles/lab6.dir/song.cpp.o  -o lab6 

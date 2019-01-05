@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/meiyindeng/Documents/cs162/Notes/Chapter10Classes/ClassesNotes/PersonData/PersonData.h
+iostream
+-
+string
+-
+cstring
+-
+
+/Users/meiyindeng/Documents/cs162/Notes/Chapter10Classes/ClassesNotes/PersonData/main.cpp
+iostream
+-
+string
+-
+PersonData.h
+/Users/meiyindeng/Documents/cs162/Notes/Chapter10Classes/ClassesNotes/PersonData/PersonData.h
+

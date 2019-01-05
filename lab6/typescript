@@ -1,0 +1,49 @@
+Script started on Fri Nov  9 00:59:31 2018
+[?1034hbash-3.2$ make
+g++ -c -Wall songmain2.cpp
+g++ -c -Wall song.cpp
+g++ songmain2.o song.o -o prog
+bash-3.2$ ./prog
+-> Testing cin -> 
+title: Anticipation
+artist: Carly Simon
+year: 1970
+duration 3.12
+title: Let It Grow
+artist: Eric Clapton
+year: 1975
+duration 3.22
+-> Testing cout ->
+for song #0
+Title: nticipation
+Artist: Carly Simon
+Year: 1970
+Duration: 3.12
+for song #1
+Title: Let It Grow
+Artist: Eric Clapton
+Year: 1975
+Duration: 3.22
+for song #2
+Title: 
+Artist: 
+Year: 0
+Duration: 0
+-> Testing assignment ->
+-> array[2] = array[0] ->
+Title: nticipation
+Artist: Carly Simon
+Year: 1970
+Duration: 3.12
+Title: Let It Grow
+Artist: Eric Clapton
+Year: 1975
+Duration: 3.22
+Title: nticipation
+Artist: Carly Simon
+Year: 1970
+Duration: 3.12
+bash-3.2$ exit
+exit
+
+Script done on Fri Nov  9 01:00:45 2018

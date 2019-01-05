@@ -1,0 +1,40 @@
+Script started on Wed Dec  5 20:20:25 2018
+[?1034hbash-3.2$ exitg++ lab9.cpp -o lab9 && ./lab9
+enter data: 
+hello
+enter data: 
+how
+enter data: 
+are
+enter data: 
+you
+enter data: 
+quit
+word to search for?
+are
+word found
+hello
+how
+are
+you
+enter data: 
+cat
+enter data: 
+dog
+enter data: 
+mouse
+enter data: 
+pig
+enter data: 
+quit
+word to search for?
+horse
+word NOT found
+cat
+dog
+mouse
+pig
+bash-3.2$ exit
+exit
+
+Script done on Wed Dec  5 20:21:09 2018

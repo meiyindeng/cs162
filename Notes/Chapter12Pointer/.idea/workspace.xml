@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated />
   </component>
   <component name="CMakeSettings">
@@ -10,29 +10,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d2eca91-5675-4e52-b59e-07778dcc07ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/notes12/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes12/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes12/.idea/notes12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes12/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes12/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notes12/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/PersonData/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/PersonData/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/PersonData/cmake-build-debug/CMakeFiles/PersonData.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/PersonData/cmake-build-debug/CMakeFiles/PersonData.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/PersonData/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter10Classes/ClassesNotes/PersonData/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Chapter12Pointer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chapter12Pointer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlist.cp" beforeDir="false" afterPath="$PROJECT_DIR$/dlist.cp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlist.h" beforeDir="false" afterPath="$PROJECT_DIR$/dlist.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/song.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Lab4.dir/song.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/prog" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/prog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/song.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/songmain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/songmain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlist.cp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlist.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/.idea/notes12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/notes12.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/notes12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/cmake-build-debug/notes12.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes12/main.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project1" beforeDir="false" afterPath="$PROJECT_DIR$/../../project1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../project1 2" beforeDir="false" afterPath="$PROJECT_DIR$/../../project1 2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../project3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/project3.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/CMakeFiles/project3.dir/task.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/Project.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/project3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../project3/cmake-build-debug/project3.cbp" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,65 +120,50 @@
     <session id="194089500">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cp" value="4" />
           <entry key="h" value="2" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CMakeLists.txt" value="2" />
           <entry key="ObjectiveC" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cp" value="229" />
+          <entry key="cp" value="354" />
           <entry key="h" value="48" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="277" />
+          <entry key="CMakeLists.txt" value="35" />
+          <entry key="ObjectiveC" value="402" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.cidr.testingFrameworks.usages" />
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dlist.cp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dlist.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -112,6 +174,7 @@
         <option value="$PROJECT_DIR$/dlist.cp" />
         <option value="$PROJECT_DIR$/dlist.h" />
         <option value="$PROJECT_DIR$/main.cp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -125,7 +188,7 @@
     <option name="x" value="610" />
     <option name="y" value="23" />
     <option name="width" value="1044" />
-    <option name="height" value="953" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -140,6 +203,17 @@
             <path>
               <item name="Chapter12Pointer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chapter12Pointer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chapter12Pointer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter12Pointer" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Chapter12Pointer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chapter12Pointer" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="CMakeFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,6 +239,13 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -177,23 +258,25 @@
       <updated>1541046879110</updated>
       <workItem from="1541046880773" duration="854000" />
       <workItem from="1541134814380" duration="4457000" />
+      <workItem from="1541576127760" duration="2070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5311000" />
+    <option name="totallyTimeSpent" value="7381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="610" y="23" width="1044" height="953" extended-state="0" />
-    <editor active="true" />
+    <frame x="610" y="23" width="1044" height="947" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.41317365" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4211577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32932693" />
+      <window_info anchor="bottom" id="CMake" visible="true" weight="0.32932693" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32932693" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39903846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -213,25 +296,31 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dlist.cp">
+    <entry file="file://$PROJECT_DIR$/dlist.cp" />
+    <entry file="file://$PROJECT_DIR$/dlist.h" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dlist.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>

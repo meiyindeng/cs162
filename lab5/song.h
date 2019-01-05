@@ -1,20 +1,31 @@
 #define MAX_STR 200
+#include <iostream>
+#include <cstring>
+using namespace std;
+
 
 class Song {
+
+    friend istream& operator>> (istream&, Song&);
+
+    friend ostream& operator<< (ostream& Song, const class Song&);
+
 private:
 
-    int * year;
-    double * duration;
+    int year;
+    double duration;
     char * title;
     char * artist;
 public:
     Song();
 
-    const int * getYear();
+    const Song& operator= (const Song&);
+
+    int getYear();
 
     void setYear(int year);
 
-    const double * getDuration();
+    double getDuration();
 
     void setDuration(double duration);
 
@@ -26,7 +37,7 @@ public:
 
     void setArtist(char artist[]);
 
-    void print();
+
 
     ~Song();
 

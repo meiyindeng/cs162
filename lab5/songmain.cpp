@@ -14,7 +14,7 @@
 #include <iostream>
 #include <cstring>
 #include "song.h"
-#include <iomanip>
+
 
 using namespace std;
 
@@ -40,20 +40,28 @@ int main() {
 
     int size = askNumberOfSong();
     list = new Song[size];
+    int size;
+    Song mySong[size];
+    for (int i = 0, i < size, i++){
 
 
-    gatherSongFromUser(size, list, title, artist, year, duration);
+    }
+    cin >> mySong[0];
 
 
-    printSong(size, list);
+    cout << mySong;
 
-    delete [] list;
+
+    //gatherSongFromUser(size, list, title, artist, year, duration);
+
+
+    // [] list;
 
     return 0;
 }
 
 // This function gather songs info from user
-void gatherSongFromUser(int size, Song *list, char *title, char *artist, int year, double duration) {
+/*void gatherSongFromUser(int size, Song *list, char *title, char *artist, int year, double duration) {
     cout << "setting array values and getting values of array" << endl;
     for (int i = 0; i < size; i++) {
         cout << "for song " << i << endl;
@@ -76,24 +84,25 @@ void gatherSongFromUser(int size, Song *list, char *title, char *artist, int yea
 
         cout << endl << endl;
     }
-}
+}*/
 
 //This function get print each song info
-void printSong(int size, Song *list) {
+/*void printSong(int size, Song *list) {
     for (int i = 0; i < size; i++) {
         cout << "printing song " << i << " information again" << endl;
         cout << "======Song======" << endl;
         cout << (list + i)->getTitle() << endl;
         cout << (list + i)->getArtist() << endl;
-        cout << *(list + i)->getYear() << endl;
-        cout << *(list + i)->getDuration() << endl;
+        cout << (list + i)->getYear() << endl;
+        cout << (list + i)->getDuration() << endl;
     }
-}
+}*/
 
 int askNumberOfSong() {
     int size;
     cout << "How many songs you like to add? " << endl;
     cin >> size;
+    cin.ignore();
 
     return size;
 

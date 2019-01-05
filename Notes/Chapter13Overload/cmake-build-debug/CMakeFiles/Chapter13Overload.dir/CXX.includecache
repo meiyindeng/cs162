@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/meiyindeng/Documents/cs162/Notes/Chapter13Overload/main.cpp
+iostream
+-
+rectangle.h
+/Users/meiyindeng/Documents/cs162/Notes/Chapter13Overload/rectangle.h
+
+/Users/meiyindeng/Documents/cs162/Notes/Chapter13Overload/rectangle.cpp
+rectangle.h
+/Users/meiyindeng/Documents/cs162/Notes/Chapter13Overload/rectangle.h
+iostream
+-
+
+/Users/meiyindeng/Documents/cs162/Notes/Chapter13Overload/rectangle.h
+

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Bucky46Composition.dir/main.cpp.o CMakeFiles/Bucky46Composition.dir/Birthday.cpp.o CMakeFiles/Bucky46Composition.dir/People.cpp.o  -o Bucky46Composition 

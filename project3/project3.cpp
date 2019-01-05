@@ -4,6 +4,7 @@
 #include <cstring>
 #include <string>
 #include "task.h"
+#include "Tasklist.h"
 
 #define MAX_STR 30
 #define MAX_STR2 100
@@ -12,10 +13,6 @@
 using namespace std;
 
 void menuPrompt();
-
-bool checkMenuChoice(int menuChoice);
-
-int menuResult(int menuChoice);
 
 void requestDateRange(int &startMonth, int &startDay, int &startYear, int &endMonth, int &endYear, int &endDay);
 
@@ -27,8 +24,7 @@ void writeTask(const char *outFileName, int count, Task *listOfTask);
 void readTask(const char *fileName, int &count, Task *listOfTask, char *taskName, char *description, int month, int day,
               int year, bool complete);
 
-void addTask(int &count, Task listOfTask[], char taskName[], char description[], int month, int day, int year,
-             bool complete);
+
 
 
 void printRequest(const char *input);
@@ -46,7 +42,7 @@ void completeTask(Task *listOfTask, int count);
 void handleMenu2 (int count, Task * listOfTask);
 
 int main() {
-    Task listOfTask[200];
+    Tasklist manager;
     int count = 0;
     int menuChoice;
 
@@ -60,13 +56,13 @@ int main() {
 
 
 
-
-    do {
+//keep
+    //do {
         menuPrompt();
 
         menuChoice = validateAndReturnUserInput(1, 5);
 
-        if (menuChoice == 1) {
+        /*if (menuChoice == 1) {
             displayTask(count, listOfTask);
         }
 
@@ -84,7 +80,7 @@ int main() {
 
     } while (menuChoice != 5);
 
-    writeTask("tasks.txt", count, listOfTask);
+    writeTask("tasks.txt", count, listOfTask);*/
 
     return 0;
 
@@ -198,6 +194,7 @@ void requestDate(const char *typeOfTime, int begin, int end) {
     cout << "Enter " << typeOfTime << " (" << begin << " to " << end << "):" << endl;
 }
 
+//keep
 int validateAndReturnUserInput(int lowNumber, int highNumber) {
     int input;
     bool valid = false;
@@ -212,6 +209,7 @@ int validateAndReturnUserInput(int lowNumber, int highNumber) {
     return input;
 }
 
+//keep
 void menuPrompt() {
     cout << "*********MAIN MENU**********" << endl;
     cout << "1 - PRINT ALL Tasks" << endl;

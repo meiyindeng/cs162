@@ -1,0 +1,98 @@
+Script started on Sat Nov 24 02:25:47 2018
+[?1034hbash-3.2$ make
+g++ -c -Wall project4.cpp
+g++ -c -Wall Task.cpp
+g++ -c -Wall TaskList.cpp
+g++ project4.o Task.o TaskList.o -o prog
+bash-3.2$ ./prog
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:1
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: NOT COMPLETE
+Task Name: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:3
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: NOT COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:4
+Enter name of task to complete
+cs162 project 2
+the task cs162 project 2 has been completed
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:1
+Task Name: cs162 project 2
+Task Description: Need to do the add task part.
+Month: 7/5/2018
+Task is: COMPLETE
+Task Name: clean bathroom
+Task Description: Scrub the tub down
+Month: 12/28/2017
+Task is: COMPLETE
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:3
+Task Name: cs162 read textbook
+Task Description: Needs to be done before final.
+Month: 8/1/2018
+Task is: NOT COMPLETE
+*********MAIN MENU**********
+1 - PRINT ALL Tasks
+2 - Print Tasks in Date Range
+3-  Print Task that are still uncompleted
+4 - Complete a task
+5 - Add Task
+6 - Quit
+Enter choice:6
+bash-3.2$ exit
+exit
+
+Script done on Sat Nov 24 02:28:12 2018
